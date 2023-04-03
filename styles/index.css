@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #f5f6f7;
+  color: #222;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 2000px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+ 
+
+}
+.blog_center_image{
+    align-items: center;
+    margin: 20px;
+    
+}
+.blog_details_title{
+    font-size: 70px;
+}
+
+.blog_details_body{
+    font-size: 30px;
+    font-weight: 100 ;
+}
+.blog_details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:1023px) {
+    .container {
+    grid-template-columns:auto auto;}
+}
+@media screen and (max-width:768px) {
+    .container {
+    grid-template-columns:auto ;}
+}
+.container > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+h1 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+button {
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.Card {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Card--body {
+  width: 100%;
+}
+.Card--body-text {
+  color: #999;
+  margin-top: 10px;
+}
+.blogs-card{
+    display:flex;
+    flex-direction: column;
+    background-color: #0dd1e65f;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.blog-image{
+    display:flex;
+    justify-content:center;
+    padding:20px
+}
+.blog-date{
+    color: black;
+    margin-bottom: 10px;
+}
+.blog-heading{
+    text-align: center;
+    font-size: 30px;
+}
+.Card__button {
+  background: #fff;
+  border: 1px solid #920dbb;
+  color: #0dd1e65f;
+}
+
+.Form {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Form--field {
+  margin: auto;
+  width: 60%;
+}
+
+.Form--field input {
+  display: block;
+  background: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #920dbb;
+  margin-bottom: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+.Form__button {
+  background: #920dbb;
+  color: #fff;
+  display: block;
+  margin: auto;
+}
